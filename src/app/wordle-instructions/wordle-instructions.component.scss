@@ -236,3 +236,68 @@ ul {
 .delay-4 {
   animation-delay: 1s;
 }
+
+@media screen and (max-width: 768px) {
+  .instructions-wrapper {
+    padding: 20px;
+  }
+
+  .floating-blob {
+    width: 200px;
+    height: 200px;
+    filter: blur(60px);
+  }
+
+  .instructions-container {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .typing-animation {
+    font-size: 1.8rem;
+  }
+
+  p,
+  ul li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  ul {
+    max-width: 100%;
+    padding-left: 10px;
+  }
+
+  .color-box {
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px !important;
+  }
+
+  .back-button {
+    width: 100%;
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typing-animation {
+    font-size: 1.5rem;
+  }
+
+  .instructions-container {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  p,
+  ul li {
+    font-size: 0.9rem;
+  }
+
+  .back-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

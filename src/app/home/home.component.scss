@@ -133,3 +133,71 @@
     }
 
 }
+
+/* Tablet View (min-width: 601px and max-width: 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+    .page-container {
+      gap: 20px;
+  
+      .tile {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+      }
+  
+      .game-description {
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 80%;
+      }
+  
+      .home-page-buttons {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+      }
+  
+      .play-button,
+      .instruction-button {
+        font-size: 24px;
+        width: 11rem;
+        padding: 12px;
+      }
+    }
+  }
+  
+  /* Mobile View (max-width: 600px) */
+  @media screen and (max-width: 600px) {
+    .page-container {
+      gap: 16px;
+      padding: 20px;
+  
+      .tile {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+      }
+  
+      .game-description {
+        font-size: 22px;
+        line-height: 30px;
+        max-width: 100%;
+      }
+  
+      .home-page-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+      }
+  
+      .play-button,
+      .instruction-button {
+        font-size: 20px;
+        width: 100%;
+        max-width: 250px;
+        padding: 10px;
+      }
+    }
+  }
+  
