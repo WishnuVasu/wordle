@@ -26,5 +26,6 @@ export const wordList: string[] = [
     "PLUCK", "QUERY", "RAVEN", "SPLIT", "TRUCK", "UPPER", "VAINLY", "WIDEN", "YEAST", "ZONAL",
     "ANGLE", "BLOCK", "CHEST", "DODGE", "EAGER", "FLOCK", "GRANT", "HOUSE", "INDEX", "JAZZY",
     "KNIFE", "LAUGH", "METAL", "NEVER", "OATHS", "PRIZE", "QUICK", "RIDER", "STAGE", "TIGER",
-    "URBAN", "VIRAL", "WAXEN", "YACHT", "ZONED", "MELON", "BLAST", "TRUST", "GHOST", "CLONE"
+    "URBAN", "VIRAL", "WAXEN", "YACHT", "ZONED", "MELON", "BLAST", "TRUST", "GHOST", "CLONE",
+    "GAMER", "SLEEP"
   ];
