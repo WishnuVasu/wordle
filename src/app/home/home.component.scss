@@ -1,0 +1,135 @@
+.page-container {
+    height: 100dvh;
+    background-color: #e3e3e1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    .game-title {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .tile {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 4px;
+    }
+
+    // Custom colors matching Wordle image 
+    .color-0 {
+        background-color: #6aaa64;
+    }
+
+    // Green
+    .color-1 {
+        background-color: #c9b458;
+    }
+
+    // Yellow 
+    .color-2 {
+        background-color: #787c7e;
+    }
+
+    // Gray
+    .color-3 {
+        background-color: #6aaa64;
+    }
+
+    // Green
+    .color-4 {
+        background-color: #c9b458;
+    }
+
+    // Yellow
+    .color-5 {
+        background-color: #787c7e;
+    }
+
+    // Gray
+
+    .game-description {
+        font-weight: normal;
+        max-width: 375px;
+        font-size: 38px;
+        line-height: 44px;
+        text-align: center;
+    }
+
+    // Mixin to handle shared button styling
+    @mixin playButtonStyle($bgColor, $hoverBgColor) {
+        background-color: transparent;
+        width: 13rem;
+        padding: 15px;
+        border-radius: 30px;
+        font-size: 30px;
+        border: 1px solid black;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: black;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.4s ease;
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: $bgColor; // Dynamic background color
+            color: white;
+            transition: left 0.4s ease;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: white;
+
+            &:before {
+                left: 0;
+            }
+        }
+    }
+
+    .home-page-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        justify-content: space-evenly;
+    }
+
+    // Apply to play-button
+    .play-button {
+        @include playButtonStyle(#6aaa64, #45a049); // Green background for Play button
+    }
+
+    // Apply to instruction-button
+    .instruction-button {
+        @include playButtonStyle(#787c7e, #6d6a68); // Grayish background for How to Play button
+        font-size: 28px;
+    }
+
+    .creator-description {
+        font-weight: bold;
+    }
+
+}
